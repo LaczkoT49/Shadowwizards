@@ -1,0 +1,124 @@
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+body{
+ background-color: #131313;
+}
+
+::-webkit-scrollbar {
+    width: 1vh;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #f93a13;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px #9c240c;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f93a13; 
+  }
+
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #000;
+}
+#navi{
+    width: 40%;
+    margin: auto;
+}
+h1{
+    font-weight: 800;
+    font-size: 5em;
+    letter-spacing: 25px;
+    z-index: 0;
+    color: #fff;
+}
+#buton2{
+    position: relative;
+    background-color: #131313;
+    display: inline-block;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    color: #f93a13;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #f93a13;
+    padding: 10px 30px;
+    transition: 1s;
+    z-index: 1;
+    overflow: hidden;
+}
+#buton2:hover{
+    color: #000;
+}
+#buton2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 0;
+    height: 100%;
+    background: #f93a13;
+    transform: skewX(35deg);
+    transition: 1s;
+    z-index: -1;
+}
+#buton2:hover:before{
+    width: 100%;
+}
+
+header{
+    background-image: url(./img/banner2.png);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    width: 50%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10vh;
+    
+}
+#box{
+    width: 80%;
+    height: fit-content;
+    z-index: 1;
+    margin: auto;
+    top: -10vh;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    padding: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+p{
+    color: #fff;
+    font-size: 2em;
+    padding: 10px;
+}
+@media only screen and (max-width: 990px){
+    #navi{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    h1{
+        font-size: 3em;
+    }
+}
